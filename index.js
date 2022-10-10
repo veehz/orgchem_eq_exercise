@@ -43,6 +43,4 @@ document.body.addEventListener("touchend", click);
 
 this.addEventListener("click", click);
 
-document.getElementById("next").addEventListener("click", click);
-
 changeEquation();
