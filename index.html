@@ -30,6 +30,15 @@
         body {
             font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;
         }
+
+        .katex>.katex-html {
+            white-space: normal;
+        }
+
+        .katex .base {
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
     </style>
 
     <title>有机化学 化学反应练习</title>
@@ -51,11 +60,11 @@
         style="overflow: auto; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 1); z-index: 1; padding: 8px;">
         <button id="close-settings">Close</button>
         <h2>Settings</h2>
-        
+
         <p>排列 (Ordered/Random): <button id="ordering">Random</button></p>
-        
+
         <p>Inclusion (And/Or): <button id="inclusion">And</button></p>
-        
+
         <fieldset id="family-fieldset">
             <legend>家族:</legend>
             <!-- <div>

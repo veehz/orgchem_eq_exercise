@@ -77,3 +77,4 @@ this.addEventListener("click", (event) => {
 });
 
 changeEquation();
+refreshCurrentEquations();

@@ -4,7 +4,7 @@ const equations = [
   {
     from: "烷烃",
     to: "炔烃",
-    equation: "2CH4 ->[1500-1600^{\\circ}C] HC~CH + 3H2",
+    equation: "2CH4 ->[1500-1600^{\\circ}C] HC#CH + 3H2",
   },
   {
     from: "烯烃",
@@ -28,21 +28,21 @@ const equations = [
     from: "炔烃",
     to: "烷烃",
     msg: "加氢",
-    equation: "HC~CH + 2H2 ->[Pt/Ni/Pd] H3CCH3",
+    equation: "HC#CH + 2H2 ->[Pt/Ni/Pd] H3CCH3",
   },
   {
     from: "炔烃",
     to: "烯烃",
     msg: "加氢",
-    equation: "H3CHC~CH + H2 ->[\\text{林德拉催化剂}] H2C=CH2",
+    equation: "H3CHC#CH + H2 ->[\\text{林德拉催化剂}] H2C=CH2",
   },
   {
     from: "炔烃",
     to: "卤代烃",
     msg: "卤化",
-    katex: `\\text{4 Cl:}\\ \\ce{HC~CH + 2Cl2 -> HCCl2-CHCl2}\\\\
-    \\text{1 Cl:}\\ \\ce{HC~CH + HCl ->[\\ce{HgSO4}][\\ce{CuCl3}] H2C=CHCl}\\\\
-    \\text{2 Cl:}\\ \\ce{HC~CH + 2HCl -> H3CCHCl2}`,
+    katex: `\\text{4 Cl:}\\ \\ce{HC#CH + 2Cl2 -> HCCl2-CHCl2}\\\\
+    \\text{1 Cl:}\\ \\ce{HC#CH + HCl ->[\\ce{HgSO4}][\\ce{CuCl3}] H2C=CHCl}\\\\
+    \\text{2 Cl:}\\ \\ce{HC#CH + 2HCl -> H3CCHCl2}`,
   },
   {
     from: "卤代烃",
@@ -60,7 +60,7 @@ const equations = [
     from: "卤代烃",
     to: "炔烃",
     msg: "脱卤",
-    equation: "H2CCl-CH2Cl + 2NaOH ->[\\text{醇}][\\Delta] HC~CH + 2NaCl + 2H2O",
+    equation: "H2CCl-CH2Cl + 2NaOH ->[\\text{醇}][\\Delta]} \\allowbreak \\ce{HC#CH + 2NaCl + 2H2O",
   },    
   {
     from: "卤代烃",
