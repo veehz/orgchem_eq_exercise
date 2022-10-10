@@ -34,24 +34,9 @@ function click() {
   }
 }
 
-// hack to prevent double click select (which is annoying)
-this.addEventListener(
-  "mousedown",
-  function (event) {
-    if (event.detail > 1) {
-      if (event.ctrlKey || event.altKey || event.shiftKey || event.metaKey)
-        return;
-      event.preventDefault();
-    }
-  },
-  false
-);
-
 this.addEventListener("keydown", (event) => {
   if (event.key === "Enter") click();
 });
-
-this.addEventListener("touchend", click);
 
 this.addEventListener("click", click);
 
