@@ -12,8 +12,7 @@ function isHidden() {
 
 let prev = 0;
 function changeEquation() {
-  let index = Math.floor(Math.random() * equations.length);
-  // not equal to prev
+  let index = prev;
   while (index == prev) {
     index = Math.floor(Math.random() * equations.length);
   }
