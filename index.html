@@ -52,16 +52,10 @@
         <button id="close-settings">Close</button>
         <h2>Settings</h2>
         
-        <p>排列 (Ordered/Random):</p>
-        <button id="ordering">Random</button>
-
-        <script lang="js">
-            function toggle(source) {
-                const checkboxes = document.getElementsByName('foo');
-                for (let checkbox in checkboxes)
-                    checkbox.checked = source.checked;
-            }
-        </script>
+        <p>排列 (Ordered/Random): <button id="ordering">Random</button></p>
+        
+        <p>Inclusion (And/Or): <button id="inclusion">And</button></p>
+        
         <fieldset id="family-fieldset">
             <legend>家族:</legend>
             <!-- <div>
