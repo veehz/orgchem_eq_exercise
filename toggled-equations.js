@@ -63,10 +63,6 @@ for (const type of familyTypes) {
   document
     .getElementById(`toggle-${type}`)
     .addEventListener("change", (event) => {
-      console.log("change");
       setCookie(`toggle-${type}`, event.target.checked ? "true" : "false");
-      console.log(type, getCookie(`toggle-${type}`));
-      refreshCurrentEquations();
-      changeEquation();
     });
 }

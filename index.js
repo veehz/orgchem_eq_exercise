@@ -55,6 +55,7 @@ function atSettingsMenu() {
 function toggleSettings() {
   if (atSettingsMenu()) {
     document.getElementById("settings").style.display = "none";
+    refreshCurrentEquations();
   } else {
     document.getElementById("settings").style.display = "block";
   }
