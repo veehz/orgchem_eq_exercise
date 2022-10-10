@@ -60,7 +60,7 @@ const equations = [
     from: "卤代烃",
     to: "炔烃",
     msg: "脱卤",
-    equation: "H2CCl-CH2Cl + 2NaOH ->[\\text{醇}][\\Delta]} \\allowbreak \\ce{HC#CH + 2NaCl + 2H2O",
+    equation: "H2CCl-CH2Cl + 2NaOH ->[\\text{醇}][\\Delta] HC#CH + 2NaCl + 2H2O",
   },    
   {
     from: "卤代烃",
@@ -101,3 +101,15 @@ const equations = [
     equation: `H3C-CH2OH ->[\\ce{KMnO4, H+}] H3C-COOH`
   }
 ];
+
+// hacky way to allow break at arrows
+const replacement = "}\\ \\allowbreak \\ce{->"
+for(let i = 0; i < equations.length; i++) {
+  let eq = equations[i];
+  if(eq.equation) {
+    eq.equation = eq.equation.replace(/->/g, replacement);
+  }
+  if(eq.katex){
+    eq.katex = eq.katex.replace(/->/g, replacement);
+  }
+}

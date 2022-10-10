@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.css"
         integrity="sha384-bYdxxUwYipFNohQlHt0bjN/LCpueqWz13HufFEV1SUatKs1cm4L6fFgCi1jT643X" crossorigin="anonymous">
 
-
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.2/dist/katex.min.js"
         integrity="sha384-Qsn9KnoKISj6dI8g7p1HBlNpVx0I8p1SvlwOldgi3IorMle61nQy4zEahWYtljaz"
         crossorigin="anonymous"></script>
@@ -30,20 +29,28 @@
         body {
             font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;
         }
-
-        .katex>.katex-html {
-            white-space: normal;
-        }
-
-        .katex .base {
-            margin-top: 2px;
-            margin-bottom: 2px;
-        }
     </style>
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESQYE2ECNB"></script>
+    <script>
+        if (!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-ESQYE2ECNB', { 'site_speed_sample_rate': 100 });
+        }
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>有机化学 化学反应练习</title>
-
-
 </head>
 
 <body>
@@ -67,10 +74,6 @@
 
         <fieldset id="family-fieldset">
             <legend>家族:</legend>
-            <!-- <div>
-                <input type="checkbox" id="toggle-family" name="toggle-family" value="Toggle All" checked>
-                <label for="toggle-family">Toggle All</label>
-            </div> -->
         </fieldset>
     </div>
 </body>
